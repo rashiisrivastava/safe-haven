@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adoption - Safe Haven</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #1f2937, #111827);
+      color: #f9fafb;
+      font-family: 'Poppins', sans-serif;
+    }
+
+     nav {
+      background-color: rgba(31, 41, 55, 0.95);
+      color: white;
+      padding: 1rem 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #38bdf8;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      color: #f9fafb;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.2rem 0.2rem;
+      border-radius: 6px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #38bdf8;
+      color: #0f172a;
+    }
+.container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem;
+    }
+ 
+    h2 {
+      text-align: center;
+      font-size: 3rem;
+      color: #38bdf8;
+      margin-bottom: 2rem;
+    }
+
+    .intro-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .intro-section img {
+      width: 20%;
+      max-width: 300px;
+      border-radius: 16px;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+    }
+
+    .intro-text {
+      flex: 1;
+    }
+
+    .intro-text h3 {
+      font-size: 2rem;
+      color: #f9fafb;
+      margin-bottom: 1rem;
+    }
+
+    .intro-text p {
+      font-size: 1.1rem;
+      color: #cbd5e1;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: #1e293b;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
+    }
+
+    .card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1.2rem;
+    }
+
+    .card-content h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+      color: #38bdf8;
+    }
+
+    .card-content p {
+      font-size: 1rem;
+      color: #e2e8f0;
+    }
+  </style>
+</head>
+<body>
+      <nav>
+    <h1>Safe Haven</h1>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="adoption.html">Adoption</a></li>
+      <li><a href="foster.html">Foster</a></li>
+      <li><a href="donation.html">Donation</a></li>
+      <li><a href="volunteer.html">Volunteer</a></li>
+      <li><a href="shelter-map.html">Shelter Map</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
+      <li><a href="contact.html">contact us</a></li>
+      <li><a href="about.html">About us</a></li>
+      
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Adopt a Friend</h2>
+
+    <div class="intro-section">
+      <div class="intro-text">
+        <h3>Give Them a Second Chance</h3>
+        <p>Millions of pets and children are waiting for a second chance at life — a warm home, a loving family, and a future full of hope. Adoption is more than a service — it’s a life-changing experience, both for them and for you.</p>
+      </div>
+      <img src="https://i.pinimg.com/originals/96/47/a5/9647a582592b0dc671d072a60877f255.jpg" alt="Adoption Hero">
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <img src="https://doggywala.com/assets/images/labrador-retriever/labrador4.jpg" alt="Labrador">
+        <div class="card-content">
+          <h3>Max</h3>
+          <p>3-year-old Labrador looking for a loving home. Friendly, playful, and great with kids.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn.openart.ai/uploads/image_hQs-UhoW_1709432366804_raw.jpg" alt="Girl">
+        <div class="card-content">
+          <h3>Ananya</h3>
+          <p>8-year-old girl who loves books, drawing, and dreams of becoming a teacher.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="data:image/jpeg;base64,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" alt="Kitten">
+        <div class="card-content">
+          <h3>Whiskers</h3>
+          <p>Playful kitten rescued from the streets, full of love and energy for the right family.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://th.bing.com/th/id/OIP.U3NipXUJAuox-yT7Bc6B0AHaLH?w=202&h=303&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Boy">
+        <div class="card-content">
+          <h3>Arjun</h3>
+          <p>6-year-old with a bright smile and curious mind. Loves nature and learning new things.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://i.pinimg.com/236x/1c/6d/df/1c6ddff38b44a7c7d1c78dfcd7d0d24c--chow-chow-puppies-fluffy-puppies.jpg" alt="Dog">
+        <div class="card-content">
+          <h3>Bruno</h3>
+          <p>2-year-old indie dog, well-behaved and loyal. Looking for a forever family.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
