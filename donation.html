@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donate | Safe Haven</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1f2937, #111827);
+      color: #f9fafb;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+ nav {
+      background-color: rgba(31, 41, 55, 0.95);
+      color: white;
+      padding: 1rem 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #38bdf8;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      color: #f9fafb;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.05rem 0.2rem;
+      border-radius: 6px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #38bdf8;
+      color: #0f172a;
+    }
+    .carousel {
+      width: 90%;
+      margin: 2rem auto;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+    }
+
+    .carousel img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+
+    main {
+      flex: 1;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    main h2 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #ffffff;
+    }
+
+    main p {
+      font-size: 1.3rem;
+      max-width: 750px;
+      margin: 1rem auto 2rem;
+      color: #f3f4f6;
+    }
+
+    .donate-btn {
+      background-color: #38bdf8;
+      color: #0f172a;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      border-radius: 50px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.3s ease;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+    .donate-btn:hover {
+      background-color: #0ea5e9;
+      transform: scale(1.07);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: #0f172a;
+      color: #cbd5e1;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+    <nav>
+    <h1>Safe Haven</h1>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="adoption.html">Adoption</a></li>
+      <li><a href="foster.html">Foster</a></li>
+      <li><a href="donation.html">Donation</a></li>
+      <li><a href="volunteer.html">Volunteer</a></li>
+      <li><a href="shelter-map.html">Shelter Map</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
+      <li><a href="contact.html">contact us</a></li>
+      <li><a href="about.html">About us</a></li>
+      
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Support Their Smiles</h2>
+    <p>Your donations help us provide care, shelter, and love to rescued pets and children in need. Every contribution lights up a life.</p>
+
+    <!-- Image Carousel -->
+    <div class="carousel">
+      <div><img src="https://images.unsplash.com/photo-1555685812-4b943f1cb0eb" alt="Orphan child" /></div>
+      <div><img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee" alt="Rescued pet" /></div>
+      <div><img src="https://images.unsplash.com/photo-1604335399108-6a7ddf5c6742" alt="Animal shelter" /></div>
+      <div><img src="https://images.unsplash.com/photo-1606821847796-cdaf95d3891a" alt="Volunteer care" /></div>
+    </div>
+
+    <button class="donate-btn"> <a href ="donateNow.html" >Donate Now </a></button>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Safe Haven | Your kindness builds brighter futures.</p>
+  </footer>
+
+  <!-- Carousel Script -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        fade: true,
+        cssEase: 'ease-in-out'
+      });
+    });
+  </script>
+</body>
+</html>
