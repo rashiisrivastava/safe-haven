@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shelter Map | Safe Haven</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1f2937, #111827);
+      color: #f9fafb;
+      min-height: 100vh;
+    }
+
+nav {
+      background-color: rgba(31, 41, 55, 0.95);
+      color: white;
+      padding: 1rem 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: #38bdf8;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav ul li a {
+      color: #f9fafb;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.2rem 0.2rem;
+      border-radius: 6px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #38bdf8;
+      color: #0f172a;
+    }
+
+
+    .map-container {
+      max-width: 1000px;
+      margin: 4rem auto;
+      background-color: #1e293b;
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.4);
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #38bdf8;
+      margin-bottom: 1rem;
+    }
+
+    p.description {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #e2e8f0;
+      margin-bottom: 2rem;
+    }
+
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: 0;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+   <nav>
+    <h1>Safe Haven</h1>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="adoption.html">Adoption</a></li>
+      <li><a href="foster.html">Foster</a></li>
+      <li><a href="donation.html">Donation</a></li>
+      <li><a href="volunteer.html">Volunteer</a></li>
+      <li><a href="shelter-map.html">Shelter Map</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
+      <li><a href="contact.html">contact us</a></li>
+      <li><a href="about.html">About us</a></li>
+      
+    </ul>
+  </nav>
+
+  <div class="map-container">
+    <h2>Find a Shelter Near You</h2>
+    <p class="description">Use the map below to locate the nearest Safe Haven shelters and connect with us to provide or seek help.</p>
+    
+    <!-- Replace this embed with your actual location or map of shelters -->
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.6828453624157!2d80.94399697507446!3d26.886732062594173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfdaf03b8f91d%3A0xe8b891233729e39!2sHazratganj%2C%20Lucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1712323800389!5m2!1sen!2sin" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</body>
+</html>
